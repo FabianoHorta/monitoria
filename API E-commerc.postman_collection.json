@@ -1,0 +1,801 @@
+{
+	"info": {
+		"_postman_id": "427661d0-f438-411b-add4-6d15f669ac02",
+		"name": "API E-commerc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26423040"
+	},
+	"item": [
+		{
+			"name": "Produtos",
+			"item": [
+				{
+					"name": "Listar produtos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/listarprodutos",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"listarprodutos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/listarprodutos",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"listarprodutos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "197"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c5-9xEvgKedHHP5uZ+BDufIGJJTA1o\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Mar 2023 00:38:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"produtoData\": [\n        {\n            \"id\": 2,\n            \"descricao\": \"Iphone 14 Pro Max\",\n            \"valorVarejo\": \"12999\",\n            \"valorAtacado\": \"11999\",\n            \"createdAt\": \"2023-03-18T00:32:10.000Z\",\n            \"updatedAt\": \"2023-03-18T00:36:38.000Z\",\n            \"categoriaId\": 1\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Inserir produto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\":\"Galaxy s22 5g\",\r\n    \"valorVarejo\":5999,\r\n    \"valorAtacado\":3399,\r\n    \"categoriaId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/addproduto",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"addproduto"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Inserir produto",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"descricao\":\"Galaxy M53 5g\",\r\n    \"valorVarejo\":2200,\r\n    \"valorAtacado\":1798,\r\n    \"categoriaId\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3001/addproduto",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"addproduto"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "44"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2c-xklIPHB5Jljep3K/NfZsyhxqsR4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Mar 2023 00:31:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"mensagem\": \"Produto inserido com sucesso.\"\n}"
+						},
+						{
+							"name": "Inserir produto",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"descricao\":\"Galaxy s22 5g\",\r\n    \"valorVarejo\":5999,\r\n    \"valorAtacado\":3399,\r\n    \"categoriaId\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3001/addproduto",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"addproduto"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "44"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2c-xklIPHB5Jljep3K/NfZsyhxqsR4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Mar 2023 00:32:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"mensagem\": \"Produto inserido com sucesso.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Alterar produto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\":\"Iphone 14 Pro Max\",\r\n    \"valorVarejo\":12999,\r\n    \"valorAtacado\":11999,\r\n    \"categoriaId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/editproduto/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"editproduto",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Alterar produto",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"descricao\":\"Iphone 14 Pro Max\",\r\n    \"valorVarejo\":12999,\r\n    \"valorAtacado\":11999,\r\n    \"categoriaId\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3001/editproduto/2",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"editproduto",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "46"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2e-tjD/KbE2YNmJigEfM+p7UAUGyS0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Mar 2023 00:36:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"mensagem\": \"Produto atualizado com sucesso.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Deletar produto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/deleteproduto/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"deleteproduto",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Deletar produto",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/deleteproduto/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"deleteproduto",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"26-djPcxH28v1duTAI++u/Ez+ojFLk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Mar 2023 00:37:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"mensagem\": \"O produto foi deletado!\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Categorias",
+			"item": [
+				{
+					"name": "Listar categorias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/listarcategoria",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"listarcategoria"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Listar categorias",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/listarcategoria",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"listarcategoria"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "431"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1af-ygaBFVx2TToKGoVLE93TeYgi0cY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Mar 2023 00:17:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"categoriaData\": [\n        {\n            \"categoriaId\": 1,\n            \"nome\": \"Smartphone\",\n            \"descricao\": \"Celular\",\n            \"createdAt\": \"2023-03-18T00:12:54.000Z\",\n            \"updatedAt\": \"2023-03-18T00:12:54.000Z\"\n        },\n        {\n            \"categoriaId\": 2,\n            \"nome\": \"Notebook\",\n            \"descricao\": \"Com SSD\",\n            \"createdAt\": \"2023-03-18T00:14:36.000Z\",\n            \"updatedAt\": \"2023-03-18T00:14:36.000Z\"\n        },\n        {\n            \"categoriaId\": 3,\n            \"nome\": \"Computador\",\n            \"descricao\": \"Sem SSD\",\n            \"createdAt\": \"2023-03-18T00:15:21.000Z\",\n            \"updatedAt\": \"2023-03-18T00:17:08.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Inserir categoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"nome\":\"Smartwatch\",\r\n\"descricao\":\"Relogio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/addcategoria",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"addcategoria"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Inserir categoria",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"nome\":\"Smartphone\",\r\n\"descricao\":\"Celular\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3001/addcategoria",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"addcategoria"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "46"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2e-P+tJ66vCoWBWkcWsxqfy1aLj6XE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Mar 2023 00:12:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"mensagem\": \"Categoria inserida com sucesso.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Alterar categoria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"nome\":\"Computador\",\r\n\"descricao\":\"Sem SSD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/editcategoria/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"editcategoria",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Alterar categoria",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"nome\":\"Computador\",\r\n\"descricao\":\"Sem SSD\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3001/editcategoria/3",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"editcategoria",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "46"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2e-ayPV/wTGIGjdn4HVoUWjb2MvgXQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Mar 2023 00:16:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"mensagem\": \"Categoria alterada com sucesso!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Deletar Categoria",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/deletecategoria/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"deletecategoria",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Deletar produto Copy",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/deletecategoria/3",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"deletecategoria",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-atTIUuQo00R5SgHy3bCRwIUgVLM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Mar 2023 00:18:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"mensagem\": \"A categoria foi deletada!\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
